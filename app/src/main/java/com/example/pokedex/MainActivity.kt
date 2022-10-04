@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pokedex.api.PokemonRepositorio
 import com.example.pokedex.domain.Pokemon
 import com.example.pokedex.domain.PokemonType
 
@@ -20,9 +21,8 @@ class MainActivity : AppCompatActivity() {
                 PokemonType("Water")
             )
         )
-        val pokemons = listOf(
-            Squirtle,Squirtle,Squirtle,Squirtle,Squirtle
-        )
+        val pokemons = listOf(Squirtle,Squirtle,Squirtle,Squirtle,Squirtle)
+        val pokemonsApi = PokemonRepositorio.listPokemons()
 
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager;
