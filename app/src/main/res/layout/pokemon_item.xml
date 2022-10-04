@@ -95,7 +95,7 @@
                 android:background="#A4ACAF"
                 android:gravity="center_horizontal"
                 android:textAlignment="center"
-                android:textColor="##212121"
+                android:textColor="#212121"
                 android:textSize="12sp"
 
                 tools:text="Water" />
